@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="2dp"
+    android:background="@color/colorPrimaryDark">
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorAccent"
+    android:padding="20dp"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/colorAccent"
+        android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:background="@color/colorAccent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title for the document"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:id="@+id/doc_title"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="Last edited on 4-10-2020"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:id="@+id/doc_date"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp" />
+
+
+    </LinearLayout>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colorAccent"
+            android:layout_weight="1"
+            android:id="@+id/docEditButton"
+            android:paddingLeft="10dp"
+            app:srcCompat="@drawable/edit" />
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center_vertical"
+        android:background="@color/colorAccent"
+        android:layout_weight="1"
+        android:id="@+id/docDeleteButton"
+        android:paddingLeft="10dp"
+        app:srcCompat="@drawable/delete" />
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
+</RelativeLayout>

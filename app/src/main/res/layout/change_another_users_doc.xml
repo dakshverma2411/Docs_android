@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@color/colorAccent"
+    android:padding="20dp" >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/another_ID"
+        android:textSize="18sp"
+        android:layout_margin="5dp"
+        android:textColor="@color/white"
+        android:hint="Enter USER ID"
+        android:textColorHint="#676767" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/doc_name"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:hint="Enter Doc Name"
+        android:textColorHint="#676767"
+        android:layout_margin="5dp"
+        android:layout_below="@id/another_ID"/>
+
+    <Button
+        android:id="@+id/changeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/doc_name"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:background="@color/blue"
+        android:text="Edit"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</RelativeLayout>
