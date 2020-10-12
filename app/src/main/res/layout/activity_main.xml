@@ -36,7 +36,7 @@
         android:background="@color/blue"
         android:layout_margin="20dp"
         android:clickable="true"
-        app:srcCompat="@drawable/add" />
+        app:srcCompat="@drawable/add_plus" />
 
 
 </RelativeLayout>
