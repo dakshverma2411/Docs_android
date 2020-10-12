@@ -36,7 +36,7 @@
         android:background="@color/blue"
         android:layout_margin="20dp"
         android:clickable="true"
-        app:srcCompat="@android:drawable/ic_input_add" />
+        app:srcCompat="@drawable/add" />
 
 
 </RelativeLayout>

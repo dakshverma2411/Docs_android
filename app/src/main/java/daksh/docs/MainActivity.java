@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(MainActivity.this,EditorActivity.class);
+                Intent intent=new Intent(MainActivity.this,EditorActivity2.class);
                 intent.putExtra(INTENT_TITLE_TAG,"Untitled");
                 intent.putExtra(INTENT_DES_TAG,"");
                 intent.putExtra(USERNAME_TAG,USERNAME);

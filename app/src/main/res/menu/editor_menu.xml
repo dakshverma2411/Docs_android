@@ -9,4 +9,7 @@
         android:id="@+id/clearAll"
         android:icon="@drawable/clear"
         app:showAsAction="always" />
+    <item android:title="Save as PDF"
+        android:id="@+id/savePdf"
+        app:showAsAction="never"/>
 </menu>

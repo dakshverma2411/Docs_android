@@ -27,6 +27,7 @@ import java.util.Queue;
 
 import Data.Document;
 import daksh.docs.EditorActivity;
+import daksh.docs.EditorActivity2;
 import daksh.docs.MainActivity;
 import daksh.docs.R;
 
@@ -112,7 +113,7 @@ public class DocRecyclerViewAdapter extends RecyclerView.Adapter<DocRecyclerView
         holder.edit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent_for_edit=new Intent(context, EditorActivity.class);
+                Intent intent_for_edit=new Intent(context, EditorActivity2.class);
                 intent_for_edit.putExtra(INTENT_DES_TAG,doc.getDescription());
                 intent_for_edit.putExtra(INTENT_TITLE_TAG,doc.getTitle());
                 intent_for_edit.putExtra(MainActivity.USERNAME_TAG,MainActivity.USERNAME);

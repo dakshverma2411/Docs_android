@@ -1,81 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app2="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/tools"
     android:padding="2dp"
-    android:background="@color/colorPrimaryDark">
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorPrimaryDark"
+    app:ignore="NamespaceTypo">
+<androidx.cardview.widget.CardView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/colorAccent"
     android:padding="20dp"
     android:layout_margin="5dp"
-    app:cardCornerRadius="20dp">
+    android:elevation="10dp"
+    app2:cardCornerRadius="20dp">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:background="@color/colorAccent"
-        android:orientation="horizontal">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="5"
-        android:background="@color/colorAccent"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Title for the document"
-            android:textStyle="bold"
-            android:layout_margin="10dp"
-            android:id="@+id/doc_title"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="italic"
-            android:text="Last edited on 4-10-2020"
-            android:textColor="@color/white"
-            android:textSize="14sp"
-            android:id="@+id/doc_date"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="10dp" />
-
-
-    </LinearLayout>
-
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center_vertical"
             android:background="@color/colorAccent"
-            android:layout_weight="1"
-            android:id="@+id/docEditButton"
-            android:paddingLeft="10dp"
-            app:srcCompat="@drawable/edit" />
+            android:orientation="horizontal"
+            android:padding="10dp">
 
-    <ImageView
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_gravity="center_vertical"
-        android:background="@color/colorAccent"
-        android:layout_weight="1"
-        android:id="@+id/docDeleteButton"
-        android:paddingLeft="10dp"
-        app:srcCompat="@drawable/delete" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:background="@color/colorAccent"
+                android:orientation="vertical">
 
-    </LinearLayout>
+                <TextView
+                    android:id="@+id/doc_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Title for the document"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/doc_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Last edited on 4-10-2020"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="italic" />
 
 
-</androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/docEditButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:paddingLeft="10dp"
+                app2:srcCompat="@drawable/edit" />
+
+            <ImageView
+                android:id="@+id/docDeleteButton"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:paddingLeft="10dp"
+                app2:srcCompat="@drawable/delete" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
 </RelativeLayout>
